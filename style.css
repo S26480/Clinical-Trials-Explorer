@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FA;
+    color: #263238;
+    line-height: 1.6;
+}
+header{
+    background-color: #174A6E;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+header h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+header p{
+    color: #E1ECF4;
+}
+.search-section{
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+#searchForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#searchForm label{
+    font-weight: bold;
+}
+#searchInput{
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+#searchForm button{
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #174A6E;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#searchForm button:hover{
+    background-color: #103650;
+}
+.trials-section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#trialsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+.trial-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #E0E6ED;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+.trial-card h2{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #174A6E;
+}
+.trial-card p{
+    margin-top: 8px;
+    font-size: 0.95rem;
+}
+.trial-card a{
+    display: inline-block;
+    margin-top: 12px;
+    color: #1769AA;
+    text-decoration: none;
+    font-weight: bold;
+}
+.trial-card a:hover{
+    text-decoration: underline;
+}
+#loadingMessage,
+#errorMessage{
+    text-align: center;
+    margin: 15px 0;
+}
+#errorMessage{
+    color: #B42318;
+}
+@media(max-width: 800px){
+    #trialsContainer{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media(max-width: 550px){
+    header h1{
+        font-size: 1.6rem;
+    }
+    #trialsContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Trials Explorer</title>
+
+    <!-- Links the external CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header section containing the project title and description -->
+    <header>
+        <h1>Clinical Trials Explorer</h1>
+        <p>Explore clinical studies around the world</p>
+    </header>
+
+    <main>
+
+        <!--Search section for entering a health condition-->
+        <section class="search-section">
+            <form id="searchForm">
+
+                <!--Label for the search input-->
+                <label for="searchInput">Search by health condition</label>
+
+                <!--Input field to enter a condition-->
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Example: diabetes, asthma"
+                    required
+                >
+
+                <!--Button to search for clinical trials-->
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!--Section for displaying loading messages, errors, and trial results-->
+        <section class="trials-section">
+
+            <!--Displays a message while the API data is loading-->
+            <p id="loadingMessage"></p>
+
+            <!--Displays error messages or messages when no trials are found-->
+            <p id="errorMessage"></p>
+
+            <!--Displays the clinical trial cards created using JavaScript-->
+            <div id="trialsContainer"></div>
+        </section>
+    </main>
+
+<!--Links the external JavaScript file-->
+<script src="./script.js"></script>
+</body>
+</html>
